@@ -1,17 +1,22 @@
-const { Schema } = require('mongoose');
+/* in this file we are creating the schema using mongoose for the data which we recive for the user*/
 
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
+
+// we are creating new schema by the name bookMovieSchema
 const bookMovieSchema = new Schema({
-    movie: Schema.Types.String,
-    slot: Schema.Types.String,
-    seats: {
-        A1: Schema.Types.Number,
-        A2: Schema.Types.Number,
-        A3: Schema.Types.Number,
-        A4: Schema.Types.Number,
-        D1: Schema.Types.Number,
-        D2: Schema.Types.Number
-    }
+  movie: { type: String }, // the name of the movie being booked is set to string
+  slot: { type: String }, // the time slot for the movie set to string
+  seats: {
+    // the object is created for  the seat number with number  type 
+    A1: { type: Number },
+    A2: { type: Number },
+    A3: { type: Number },
+    A4: { type: Number },
+    D1: { type: Number },
+    D2: { type: Number },
+  },
+});
 
-})
-
-exports.bookMovieSchema = bookMovieSchema;
+// here we are exporting  the schema as a mongoose model
+module.exports = mongoose.model("bookmovietickets", bookMovieSchema);
