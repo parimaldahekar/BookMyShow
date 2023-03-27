@@ -1,9 +1,13 @@
-
+import React from "react";
+import BsState from "./context/State";
+import Home from "./pages/Home";
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+    <>
+      <BsState>
+        <Home />
+      </BsState>
+    </>
   );
 }
 
