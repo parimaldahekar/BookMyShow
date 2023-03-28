@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import BsContext from "../context/Context";
 import "./styles/Modal.css";
 
-function Modal(props) {
+function Modal() {
   // here we are getting error and the functions from context
   const context = useContext(BsContext);
   const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } = context;

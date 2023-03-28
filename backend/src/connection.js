@@ -1,4 +1,4 @@
-/* in this file we are connecting our database with our backend */
+/* In this file we are connecting our database with our backend */
 require("dotenv").config();  // we will get  environment variables from a .env file
 const { MongoClient } = require("mongodb");
 

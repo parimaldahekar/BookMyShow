@@ -76,7 +76,7 @@ const Home = (props) => {
         break;
       case checkNegativeSeatsValidity(noOfSeat) || checkZeroSeatsValidity(noOfSeat):
         setErrorPopup(true);
-        setErrorMessage("Invalid Seats!");
+        setErrorMessage("Please select a seats!");
         break;
       default:
         handlePostBooking();
@@ -95,7 +95,7 @@ const Home = (props) => {
 /*  The component also renders the Modal component, which displays error messages, and the SelectMovie, LastBookingDetails, TimeShedule, and SelectSeats components, which are used to select a movie, display the user's last booking details, select a time slot, and select the number of seats, respectively. */
   return (
     <>
-      <Modal />
+      <Modal/>
       <div className="container">
         <div className="selection_container">
           <div className="wrapper">
