@@ -1,4 +1,4 @@
-/* In this file we are creating the schema using mongoose for the data which we recive for the user*/
+/* in this file we are creating the schema using mongoose for the data which we recive for the user*/
 
 const mongoose = require("mongoose");
 const { Schema } = mongoose;

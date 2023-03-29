@@ -20,7 +20,7 @@ const BsState = (props) => {
   // this function is used  to make a post request to the server with the booking details
   const handlePostBooking = async () => {
     //from here we are  sending api request to backend with user selected movie, slot and seats to book movie.
-    const response = await fetch(`https://pear-alligator-wear.cyclic.app/api/booking`, {
+    const response = await fetch(`http://localhost:8080/api/booking`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const BsState = (props) => {
 
   // this function help  to make a get request to the server to get the last booking details
   const handleGetLastBooking = async () => {
-    const response = await fetch(`https://pear-alligator-wear.cyclic.app/api/booking`, {
+    const response = await fetch(`http://localhost:8080/api/booking`, {
       method: "GET",
     });
 

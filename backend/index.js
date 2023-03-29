@@ -1,4 +1,4 @@
-/* In this page we are creating the server using express and connecting it to mongodb server 
+/* in this page we are creating the server using express and connecting it to mongodb server 
 using mongoose library and listening it on port 8080 */
 const express = require("express"); 
 const app = express(); 

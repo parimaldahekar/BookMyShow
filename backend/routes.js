@@ -1,4 +1,6 @@
-
+/* in this file we are are creating the routes using the modules and sending the data to database the booking 
+will be successfull if the data send to data dabe else it will show error. and we are also creating the route to get
+recent data sended by the user on route  /booking  */
 const express = require("express");
 const router = express.Router(); 
 const Schema = require("./schema"); 
@@ -23,7 +25,7 @@ router.post("/booking", async (req, res) => {
 
   if (saved) {
     // when the booking is successull the success message with the data is send
-    res.status(200).json({ data: myData, message: "Booking Successful!" });
+    res.status(200).json({ data: myData, message: "Booking successful!" });
   } else {
     // when booking is not successful  error messege is send in  response with a null data
     res
