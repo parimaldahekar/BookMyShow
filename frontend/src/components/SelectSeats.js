@@ -1,23 +1,29 @@
 import React, { useState, useContext, useEffect } from "react";
 import { seats } from "../data/Data";
 import "./styles/selectSeats.css";
-import BsContext from "../context/Context";
+import DatabaseContext from "../context/DatabaseContext";
 import SeatsInput from "./SeatsInput";
 
 const SelectSeats = () => {
+  // State to keep track of selected seats
   const [seat, changeSeats] = useState([]);
-  const context = useContext(BsContext);
+  
+  // Accessing context
+  const context = useContext(DatabaseContext);
   const { noOfSeat, changeNoOfSeats } = context;
 
   useEffect(() => {
-    //  this will clear selected seats when noOfSeat changes
+    // Clear selected seats when noOfSeat changes
     changeSeats([]);
   }, [noOfSeat]);
 
   return (
     <>
+      {/* Wrapper */}
       <div className="SS_wrapper">
+        {/* Heading */}
         <h1 className="SS_heading">Select Seats :-</h1>
+        {/* Seats container */}
         <div className="SS_main_container">
           {seats.map((e, index) => {
             return (

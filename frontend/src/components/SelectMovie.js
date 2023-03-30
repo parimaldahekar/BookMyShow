@@ -1,39 +1,35 @@
 import React, { useContext, useEffect } from "react";
 import RadioComponent from "./RadioComponent";
 import { moviesList } from "../data/Data";
-import BsContext from "../context/Context";
+import DatabaseContext from "../context/DatabaseContext";
 import "./styles/SelectMovie.css";
 
 const SelectMovie = () => {
-  const context = useContext(BsContext);
-
+  // Get the movie and changeMovie functions from the context
+  const context = useContext(DatabaseContext);
   const { movie, changeMovie } = context;
+
+  // Use useEffect hook to get the selected movie from local storage and update the context if it's different than the current movie state
   useEffect(() => {
-    // Get the selected movie from local storage
     const selectedMovie = window.localStorage.getItem("movie");
 
-    // The useEffect function takes a callback function that is executed when the component mounts and any time movie or changeMovie change.
     if (selectedMovie && selectedMovie !== movie) {
       changeMovie(selectedMovie);
     }
-    // If a selected movie is found in local storage and it is different than the current movie state, it updates the context with the selected movie using the changeMovie function.
   }, [changeMovie, movie]);
 
-  // this will handle the change of selected movie
+  // Handle the change of selected movie and update it in the context and local storage
   const handleChangeMovie = (value) => {
-    // used to update the selected movie
     changeMovie(value);
-
-    // this will store the selected movie in local storage
     window.localStorage.setItem("movie", value);
   };
 
   return (
     <>
-      {/* used to display heading*/}
+      {/* Display the heading */}
       <h1 className="SM_heading">Select a Movie :-</h1>
 
-      {/* this will display the selected movie option */}
+      {/* Display the radio buttons for all movies in the list */}
       <div className="SM_main_container">
         {moviesList.map((el, index) => {
           return (

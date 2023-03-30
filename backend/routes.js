@@ -25,7 +25,7 @@ router.post("/booking", async (req, res) => {
 
   if (saved) {
     // when the booking is successull the success message with the data is send
-    res.status(200).json({ data: myData, message: "Booking successful!" });
+    res.status(200).json({ data: myData, message: "Booking Successful!" });
   } else {
     // when booking is not successful  error messege is send in  response with a null data
     res

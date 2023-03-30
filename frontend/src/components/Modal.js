@@ -1,30 +1,29 @@
 import React, { useContext } from "react";
-import BsContext from "../context/Context";
+import DatabaseContext from "../context/DatabaseContext";
 import "./styles/Modal.css";
 
 function Modal() {
-  // here we are getting error and the functions from context
-  const context = useContext(BsContext);
-  const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } = context;
+  // Destructure the context object directly for better readability
+  const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } =
+    useContext(DatabaseContext);
 
-  // this is the function for closing error modal
+  // Function for closing the error modal
   const handleClosePopup = () => {
     setErrorMessage("");
     setErrorPopup(false);
   };
-  // rendering the error model
+
+  // Render the error modal if `errorPopup` is true
   return (
     <>
       {errorPopup && (
-        <div
-          className={`modal-container ${errorPopup ? "active" : "inactive"}`}
-        >
+        <div className={`modal-container ${errorPopup ? "active" : "inactive"}`}>
           <div className="modal">
             <div className="modal-header">
               <strong>Message</strong>
             </div>
             <div className="modal-body">
-              {/* the error message will display */}
+              {/* Display the error message */}
               <span>{errorMessage}</span>
             </div>
             <div className="modal-footer">
