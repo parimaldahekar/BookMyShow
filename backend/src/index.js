@@ -2,7 +2,7 @@
 using mongoose library and listening it on port 8080 */
 const express = require("express"); 
 const app = express(); 
-const { connection } = require("./connection.js"); 
+const { connection } = require("./connector");
 const cors = require("cors"); 
 const bodyParser = require("body-parser"); 
 
