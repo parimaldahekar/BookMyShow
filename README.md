@@ -21,11 +21,10 @@
     <h2>Roadmap:</h2>
 <p>The BookMyShow Fullstack Capstone Project is aimed at creating a web application that enables users to book movie tickets online. The project involves several components, including the frontend, backend, database, and APIs. Here is the roadmap for the project:</p>
 <ol>
-<li>Design the wireframe and prototype: The first step is to design the wireframe and prototype of the application to get a clear picture of what the final product should look like.</li>
-<li>Develop the frontend: After designing the wireframe and prototype, the next step is to develop the frontend using HTML, CSS, and JavaScript. React can be used to create a responsive and interactive user interface.</li>
-<li>Develop the backend: The backend can be developed using Node.js and Express. APIs can be created to enable users to perform functions like booking tickets.</li>
-<li>Create a database: A database can be created using MongoDB to store booking details like movie names, movie timing, and seats.</li>
-<li>Testing: Finally, the application should be tested to ensure that it meets the requirements and functions as expected. Both manual and automated tests can be conducted to identify and fix any bugs or errors in the application.</li>
+<li><b>Develop the frontend:</b> After designing the wireframe and prototype, the next step is to develop the frontend using HTML, CSS, and JavaScript. React can be used to create a responsive and interactive user interface.</li>
+<li><b>Develop the backend:</b> The backend can be developed using Node.js and Express. APIs can be created to enable users to perform functions like booking tickets.</li>
+<li><b>Create a database:</b> A database can be created using MongoDB to store booking details like movie names, movie timing, and seats.</li>
+<li><b>Testing:</b> Finally, the application should be tested to ensure that it meets the requirements and functions as expected. </li>
 </ol>
 <p>By following this roadmap, we can create a comprehensive web application that provides a user-friendly platform for booking movie tickets.</p>
     <h3>Technologies Used</h3>
