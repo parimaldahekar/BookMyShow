@@ -37,3 +37,12 @@
 
   }
   }
+
+
+  @media screen and (max-width: 700px) {
+ 
+    .SM_heading {
+      width: 100%;
+      font-size: 18px;
+    }
+    }

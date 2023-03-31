@@ -43,4 +43,9 @@
     margin: 20px 5px;
 
   }
+
+  .SS_heading {
+    width: 100%;
+    font-size: 18px;
+  }
 }
