@@ -3,9 +3,41 @@
   font-size: 22px;
 }
 
+.Slot_container{
+  width: 64vw;
+  border: 5px ;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px;
+  padding: 20px 10px;
+  margin: 15px 0px 10px 5px;
+  
+}
+
 .TS_main_container {
   display: flex;
-  margin-bottom: 20px;
   justify-content: flex-start;
   flex-wrap: wrap;
+     
+}
+
+@media screen and (max-width: 700px) {
+  .TS_main_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .Slot_container{
+    width: 90%;
+    border: 5px ;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 10px 20px 10px;
+
+  }
 }

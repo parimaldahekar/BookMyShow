@@ -23,7 +23,7 @@ const TimeSchedule = () => {
       {/* Time schedule container */}
       <div className="Slot_container">
         {/* Heading */}
-        <h1 className="TS_heading">Select a Schedule :-</h1>
+        <h1 className="TS_heading">Select a Time Slot :-</h1>
 
         {/* Main container to display time slots */}
         <div className="TS_main_container">

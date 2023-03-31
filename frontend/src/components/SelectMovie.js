@@ -26,11 +26,12 @@ const SelectMovie = () => {
 
   return (
     <>
-      {/* Display the heading */}
-      <h1 className="SM_heading">Select a Movie :-</h1>
+    
 
-      {/* Display the radio buttons for all movies in the list */}
       <div className="SM_main_container">
+        {/* Display the heading */}
+        <h1 className="SM_heading">Select a Movie :-</h1>
+         {/* Display the radio buttons for all movies in the list */}
         {moviesList.map((el, index) => {
           return (
             <RadioComponent

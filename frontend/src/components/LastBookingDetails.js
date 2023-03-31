@@ -14,7 +14,7 @@ const LastBookingDetails = () => {
 
   return (
     <div className="last-booking-details-container">
-      <h2 className="last-booking-details-header">Last Booking Details:</h2>
+      <h3 className="last-booking-details-header">Last Booking Details:</h3>
       {lastBookingDetails ? (
         //Below code show the last booking details if it is available
         <>
@@ -23,13 +23,13 @@ const LastBookingDetails = () => {
             <ul className="seats-list">
               {seats.map((seat) => (
                 // Map through the seats array to display the seat and its quantity
-                <li className="seat-value" key={seat}>
+                <div className="seat-value"  key={seat}>
                   {seat}: {Number(lastBookingDetails.seats[seat])}
-                </li>
+                </div>
               ))}
             </ul>
           </div>
-          <p className="slot" style={{ textAlign: "left" }}>
+          <p className="slot" >
            {/*Below code show the time slot of booking */}
             Slot: <span>{lastBookingDetails.slot}</span>
           </p>

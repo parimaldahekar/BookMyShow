@@ -1,11 +1,46 @@
+.SS_wrapper{
+  width: 64vw;
+  border: 5px ;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px;
+  padding: 10px;
+  margin: 10px 10px 20px 5px;
+}
+
 .SS_heading {
   width: 100%;
   font-size: 22px;
 }
 
+
 .SS_main_container {
+  
   display: flex;
-  margin-bottom: 20px;
   justify-content: flex-start;
   flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .SS_main_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+  }
+
+ .SS_wrapper{
+    width: 90%;
+    border: 5px ;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 5px;
+
+  }
 }

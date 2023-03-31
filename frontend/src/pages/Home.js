@@ -75,37 +75,44 @@ const Home = (props) => {
   // Render the Home component
   return (
     <>
-      {/*Render the Modal component */}
-      <Modal />
-      <div className="container">
-        <div className="selection_container">
-          <div className="wrapper">
-            <div className="select_movie_component">
-              {/* Render the SelectMovie component */}
-              <SelectMovie />
-            </div>
+    {/*Render the Modal component */}
+    <Modal />
+    <div className="container">
+      <div className="selection_container">
+        <div className="wrapper">
+          <div className="select_movie_component">
+            {/* Render the SelectMovie component */}
+            <SelectMovie />
             <div className="last_booking_details_container">
-              {/* Render the LastBookingDetails component*/}
-              <LastBookingDetails /> 
-            </div>
+            {/* Render the LastBookingDetails component*/}
+            <LastBookingDetails /> 
           </div>
-          <div className="time_seats_container">
-            {/* Render the TimeSchedule component */}
-            <TimeSchedule />
-            {/*Render the SelectSeats component */}
-            <SelectSeats />
-            <button
-              onClick={() => {
-                handleBookNow();
-              }}
-              className="BN-btn "
-            >
-              Book Now
-            </button>
           </div>
+       
+        </div>
+        <div className="time_slot_container">
+          {/* Render the TimeSchedule component */}
+          <TimeSchedule />
+        </div>
+        <div>
+        <SelectSeats />
+
+        </div>
+        <div className="seat_slot_container" style={{ textAlign: "center" }}>
+          {/*Render the SelectSeats component */}
+          <button
+            onClick={() => {
+              handleBookNow();
+            }}
+            className="BN-btn"
+          >
+            Book Now
+          </button>
         </div>
       </div>
-    </>
+    </div>
+  </>
+  
   );
 };
 

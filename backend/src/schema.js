@@ -1,14 +1,17 @@
-/* in this file we are creating the schema using mongoose for the data which we recive for the user*/
-
+// Require Mongoose library
 const mongoose = require("mongoose");
+
+// Destructure the Schema object from Mongoose
 const { Schema } = mongoose;
 
-// we are creating new schema by the name bookMovieSchema
+// Define the Schema for the movie booking
 const bookMovieSchema = new Schema({
-  movie: { type: String }, // the name of the movie being booked is set to string
-  slot: { type: String }, // the time slot for the movie set to string
+  // The name of the movie being booked is set to string
+  movie: { type: String },
+  // The time slot for the movie is set to string
+  slot: { type: String },
+  // The object is created for the seat number with number  type
   seats: {
-    // the object is created for  the seat number with number  type 
     A1: { type: Number },
     A2: { type: Number },
     A3: { type: Number },
@@ -18,5 +21,5 @@ const bookMovieSchema = new Schema({
   },
 });
 
-// here we are exporting  the schema as a mongoose model
+// Export the schema as a Mongoose model with the name "bookmovietickets"
 module.exports = mongoose.model("bookmovietickets", bookMovieSchema);

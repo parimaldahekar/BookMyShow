@@ -1,29 +1,28 @@
-/* in this page we are creating the server using express and connecting it to mongodb server 
-using mongoose library and listening it on port 8080 */
-const express = require("express"); 
-const app = express(); 
-const { connection } = require("./connector");
-const cors = require("cors"); 
-const bodyParser = require("body-parser"); 
+const express = require("express"); // Express.js web application framework
+const app = express(); // Creating an instance of the express application
+const { connection } = require("./connector"); // Database connection function
+const cors = require("cors"); // Middleware to enable Cross-Origin Resource Sharing (CORS)
+const bodyParser = require("body-parser"); // Middleware to parse HTTP request body
 
-
+// Setting the port number for the application to listen on
 const PORT = process.env.PORT || 8080;
- 
 
-// this is the body parser middleware to parse urlencoded data
-app.use(bodyParser.urlencoded({ extended: false })); 
+// Body parser middleware to parse urlencoded data
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// this is the body-parser middleware to parse json data
-app.use(bodyParser.json()); 
+// Body-parser middleware to parse JSON data
+app.use(bodyParser.json());
 
+app.use(cors()); // Enabling CORS for all routes
 
-app.use(cors()); 
+// Calling the database connection function
+connection();
 
-// here we are calling the database connection function
-connection(); 
+// Setting up the API routes
+app.use("/api", require("./routes"));
 
-app.use("/api", require("./routes")); 
+// Starting the server to listen on the specified port
+app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
 
-app.listen(PORT, () => console.log(`App listening on port ${PORT}!`)); 
-
+// Exporting the express application to be used in other parts of the application
 module.exports = app;

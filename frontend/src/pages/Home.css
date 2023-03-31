@@ -1,6 +1,6 @@
 .container {
-  width: 85%;
-  margin: 30px auto;
+  width: 90%;
+  margin:  50px auto;
   padding: 20px 20px 0px 20px;
   background-color: #eae7e7;
   border-radius: 10px;
@@ -15,24 +15,24 @@
 
 .select_movie_component {
   flex-grow: 1;
+  display: flex;
+  
 }
+
+
 
 .BN-btn {
   padding: 10px;
   border: none;
-  margin-top: 20px;
-  left: 10px;
-  border-radius: 5px;
+  margin: 10px 10px 20px 10px;
+  border-radius: 15px;
   cursor: pointer;
   font-size: 25px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   background-image: linear-gradient(rgb(0, 34, 255), rgb(0, 255, 106));
   border-image: linear-gradient(rgb(0, 34, 255), rgb(0, 255, 106));
-  position: relative;
   padding-bottom: 10px;
-  margin-bottom: 10px;
-
 }
 
 .BN-btn:hover {
@@ -45,36 +45,81 @@
   flex-grow: 0;
   overflow: visible;
 }
-.time_seats_container {
+.time_slot_container {
   position: relative;
   overflow: auto;
   top: -10px;
 }
 .SS_wrapper {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
+
+
 @media screen and (max-width: 1300px) {
+
+  .container {
+    width: 85%;
+    padding: 15px;
+  }
+
   .wrapper {
     flex-direction: column-reverse;
   }
 
-  .time_seats_container {
-    top: 0px;
+  .select_movie_component {
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
   }
-  .last_booking_details_container {
+
+  .time_slot_container {
+    top: 0px;
+    width: auto;
     margin-bottom: 20px;
   }
+  
+  .last_booking_details_container {
+    width: 33%;
+  border: 5px ;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px;
+  padding: 10px 10px 30px 20px;
+  margin: 20px 0px 20px 20px;
+
+  }
+  
 
   .BN-btn{
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .container {
-    width: 95%;
+    width: 85%;
     padding: 15px;
+  }
+
+  .select_movie_component {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+  border: 5px ;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+
+  }
+
+  .last_booking_details_container {
+    width: 90%;
+  border: 5px ;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px;
+  padding: 10px 10px 30px 20px;
+  margin: 20px 0px 20px 0px;
+
   }
 
   

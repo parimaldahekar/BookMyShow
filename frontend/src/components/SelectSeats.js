@@ -22,7 +22,7 @@ const SelectSeats = () => {
       {/* Wrapper */}
       <div className="SS_wrapper">
         {/* Heading */}
-        <h1 className="SS_heading">Select Seats :-</h1>
+        <h1 className="SS_heading">Select the Seats :-</h1>
         {/* Seats container */}
         <div className="SS_main_container">
           {seats.map((e, index) => {

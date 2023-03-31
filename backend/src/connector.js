@@ -1,25 +1,23 @@
-/* in this file we are connecting our database with our backend */
-require("dotenv").config();  // we will get  environment variables from a .env file
-const { MongoClient } = require("mongodb");
+require("dotenv").config(); // Used to load environment variables from .env file
+const { MongoClient } = require("mongodb"); // MongoDB driver for Node.js
+let mongoose = require("mongoose"); // Mongoose is a MongoDB object modeling tool
+mongoose.set("strictQuery", true); // Setting mongoose query mode to 'strict'
 
-let mongoose = require("mongoose");
-mongoose.set("strictQuery", true);
-
-// here we are reactivating  the mongodb connection uri from the environment variables
+// Getting MongoDB connection URI from environment variables
 const mongoURI = process.env.MONGODBURI;
 
-// this is the function to connect mongodb from mongoose library 
+// Function to connect to MongoDB using mongoose library
 const connectToMongo = async () => {
-  mongoose
-    .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
-      //  give  a message when connection is successfull
-      console.log("connection established with mongodb server online");
-    })
-    .catch((err) => {
-      // give  error message, error occurs during the connection
-      console.log("error while connection", err);
-    });
+try {
+await mongoose.connect(mongoURI, {
+useNewUrlParser: true, // Used to parse MongoDB connection string
+useUnifiedTopology: true, // Used to enable new Server Discover and Monitoring engine
+});
+console.log("Connected to MongoDB!"); // Connection success message
+} catch (error) {
+console.log("Error while connecting to MongoDB", error); // Connection error message
+}
 };
 
+// Exporting the function to be used in other parts of the application
 exports.connection = connectToMongo;
