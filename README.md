@@ -1,70 +1,52 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookMyShow</title>
+</head>
+<body>
+    <h1>BookMyShow </h1>
+      <p>Frontend: <a href="https://flashcard-generator-pd.netlify.app/" target="_blank">https://flashcard-generator-pd.netlify.app/</a></p>
+    <p>Backend: <a href="https://flashcard-generator-pd.netlify.app/" target="_blank">https://flashcard-generator-pd.netlify.app/</a></p>
+    <p>The BookMyShow Capstone Project is a web application that allows users to book movie tickets online. The project is built using several components, including the frontend, backend, database, and APIs. The application provides a userfriendly platform that enables users to book movie tickets from the comfort of their homes.</p>
+    <h2>Installation</h2>
+<p>To install the BookMyShow Capstone Project, follow these steps:</p>
+<ol>
+    <li>Clone the repository to your local machine.</li>
+    <li>Install Node.js and MongoDB if not already installed.</li>
+    <li>Run "npm install" to install all dependencies.</li>
+    <li>Create a .env file with the necessary environment variables.</li>
+    <li>Run "npm start" to start the application.</li>
+</ol>
+    <h2>Roadmap:</h2>
+<p>The BookMyShow Fullstack Capstone Project is aimed at creating a web application that enables users to book movie tickets online. The project involves several components, including the frontend, backend, database, and APIs. Here is the roadmap for the project:</p>
+<ol>
+<li>Design the wireframe and prototype: The first step is to design the wireframe and prototype of the application to get a clear picture of what the final product should look like.</li>
+<li>Develop the frontend: After designing the wireframe and prototype, the next step is to develop the frontend using HTML, CSS, and JavaScript. React can be used to create a responsive and interactive user interface.</li>
+<li>Develop the backend: The backend can be developed using Node.js and Express. APIs can be created to enable users to perform functions like booking tickets.</li>
+<li>Create a database: A database can be created using MongoDB to store booking details like movie names, movie timing, and seats.</li>
+<li>Testing: Finally, the application should be tested to ensure that it meets the requirements and functions as expected. Both manual and automated tests can be conducted to identify and fix any bugs or errors in the application.</li>
+</ol>
+<p>By following this roadmap, we can create a comprehensive web application that provides a user-friendly platform for booking movie tickets.</p>
+    <h3>Technologies Used</h3>
+<hr>
+<p>The development of this website involved various stages that can be categorized as:</p>
+<h4>Frontend (Client) :</h4>
+<ul>
+  <li><b>React.js:</b> A widely-used JavaScript library for building user interfaces.</li>
+  <li><b>CSS:</b> An essential language for designing and styling web pages.</li>
+  <li><b>Bootstrap:</b> A popular front-end framework that offers a set of tools and pre-designed elements to create responsive and mobile-first websites and web applications. It simplifies web development by providing a robust grid system, CSS components, and JavaScript plugins.</li>
+</ul>
+<h4>Backend (Server) :</h4>
+<ul>
+  <li><b>Node.js:</b> A popular runtime environment that enables developers to build scalable server-side applications using JavaScript.</li>
+  <li><b>Express.js:</b> A popular Node.js framework that simplifies the process of building web applications and APIs.</li>
+  <li><b>Body-Parser:</b> An Express middleware that parses incoming request bodies in a middleware before the handlers, available under the req.body property.</li>
+   <li><b>Cors (Cross-Origin Resource Sharing):</b> A security mechanism that allows web applications running on one domain to access resources on another domain.</li>
+  <li><b>Dotenv:</b> A zero-dependency module that loads environment variables from a .env file into process.env.</li>
+  <li><b>MongoDB:</b> A widely-used NoSQL database that allows developers to store and retrieve data in a flexible and scalable way.</li>
+  <li><b>Mongoose:</b> A JavaScript library that provides a schema-based solution for MongoDB.</li>
+ 
+</ul>
+</body>
+</html>
