@@ -5,7 +5,7 @@ const cors = require("cors"); // Middleware to enable Cross-Origin Resource Shar
 const bodyParser = require("body-parser"); // Middleware to parse HTTP request body
 
 // Setting the port number for the application to listen on
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 
 // Body parser middleware to parse urlencoded data
 app.use(bodyParser.urlencoded({ extended: false }));

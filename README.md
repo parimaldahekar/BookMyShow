@@ -6,8 +6,8 @@
 </head>
 <body>
     <h1>BookMyShow </h1>
-      <p>Frontend: <a href="https://flashcard-generator-pd.netlify.app/" target="_blank">https://flashcard-generator-pd.netlify.app/</a></p>
-    <p>Backend: <a href="https://flashcard-generator-pd.netlify.app/" target="_blank">https://flashcard-generator-pd.netlify.app/</a></p>
+      <p>Frontend: <a href="https://bookmyshow-pd.netlify.app/" target="_blank">https://bookmyshow-pd.netlify.app/</a></p>
+    <p>Backend: <a href="https://bookmyshow-4i5c.onrender.com/api/booking" target="_blank">https://bookmyshow-4i5c.onrender.com/api/booking</a></p>
     <p>The BookMyShow Capstone Project is a web application that allows users to book movie tickets online. The project is built using several components, including the frontend, backend, database, and APIs. The application provides a userfriendly platform that enables users to book movie tickets from the comfort of their homes.</p>
     <h2>Installation</h2>
 <p>To install the BookMyShow Capstone Project, follow these steps:</p>
