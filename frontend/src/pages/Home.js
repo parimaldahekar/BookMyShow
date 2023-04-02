@@ -72,6 +72,24 @@ const Home = (props) => {
     }
   };
 
+  const handleDeleteBooking = async () => {
+    // Sending API request to backend to delete most recent booking
+    const response = await fetch(`https://bookmyshow-4i5c.onrender.com/api/booking`, {
+      method: "DELETE",
+    });
+  
+    const data = await response.json();
+  
+    // Showing error popup if the response status is other than 200
+    setErrorPopup(true);
+    setErrorMessage(data.message);
+  
+    // Clearing the last booking details if the response status is 200
+    if (response.status === 200) {
+      LastBookingDetails(null);
+    }
+  };
+  
   
 
   // Render the Home component
@@ -110,6 +128,14 @@ const Home = (props) => {
           >
             Book Now
           </button>
+          <button
+          onClick={() => {
+            handleDeleteBooking();
+          }}
+          className="BN-btn"
+        >
+          Del
+        </button>
         </div>
       </div>
     </div>
