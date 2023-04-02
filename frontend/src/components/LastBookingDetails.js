@@ -16,26 +16,30 @@ const LastBookingDetails = () => {
     <div className="last-booking-details-container">
       <h3 className="last-booking-details-header">Last Booking Details:</h3>
       {lastBookingDetails ? (
-        //Below code show the last booking details if it is available
+        // Below code shows the last booking details if it is available
         <>
           <div className="seats-container">
             <p className="seats-header">Seats:</p>
             <ul className="seats-list">
               {seats.map((seat) => (
-                // Map through the seats array to display the seat and its quantity
-                <div className="seat-value"  key={seat}>
-                  {seat}: {Number(lastBookingDetails.seats[seat])}
-                </div>
+                // Only show the seat if its quantity is greater than 1
+                lastBookingDetails.seats[seat] >= 1 && (
+                  <div className="" key={seat}>
+                   
+                      {seat}: {lastBookingDetails.seats[seat]}
+                    
+                  </div>
+                )
               ))}
             </ul>
           </div>
-          <p className="slot" >
-           {/*Below code show the time slot of booking */}
-            Slot: <span>{lastBookingDetails.slot}</span>
+          <p className="slot">
+            {/* Below code shows the time slot of booking */}
+            Slot:- <span>{lastBookingDetails.slot}</span>
           </p>
           <p className="movie">
-             {/* Below code show the name of last booked movie */}
-            Movie: <span>{lastBookingDetails.movie}</span>
+            {/* Below code shows the name of last booked movie */}
+            Movie:- <span>{lastBookingDetails.movie}</span>
           </p>
         </>
       ) : (

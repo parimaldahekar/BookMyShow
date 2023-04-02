@@ -4,9 +4,11 @@
   font-weight: 500;
   user-select: none;
   letter-spacing: 0.5px;
-  border-radius: 1px;
+  border-radius: 5px;
   cursor: pointer;
   height: 2.5vh;
+  text-align: center;
+
 }
 
 .form-check-label.inactive {
@@ -16,7 +18,7 @@
   text-align: center;
   border-radius: 5px;
   height: 2.5vh;
-  justify-content: center;
+  text-align: center;
 
 }
 

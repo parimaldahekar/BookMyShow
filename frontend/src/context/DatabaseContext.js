@@ -5,3 +5,4 @@ const DatabaseContext = createContext();
 
 // Export the context object
 export default DatabaseContext;
+

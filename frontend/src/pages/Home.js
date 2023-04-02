@@ -4,13 +4,13 @@ import SelectSeats from "../components/SelectSeats";
 import TimeSchedule from "../components/TimeSchedule";
 import Modal from "../components/Modal";
 import "./Home.css";
-import BsContext from "../context/DatabaseContext";
+import DatabaseContext from "../context/DatabaseContext";
 import { useContext, useMemo } from "react";
 
 
 const Home = (props) => {
-  // Get context from the BsContext provider
-  const context = useContext(BsContext);
+  // Get context from the DatabaseContext provider
+  const context = useContext(DatabaseContext);
   // Destructure values from context
   const {
     movie,
@@ -71,6 +71,8 @@ const Home = (props) => {
         changeNoOfSeats({});
     }
   };
+
+  
 
   // Render the Home component
   return (
