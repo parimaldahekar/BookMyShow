@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BookMyShow</title>
 </head>
 <body>
     <h1>BookMyShow </h1>
@@ -14,9 +13,9 @@
 <ol>
     <li>Clone the repository to your local machine.</li>
     <li>Install Node.js and MongoDB if not already installed.</li>
-    <li>Run "npm install" to install all dependencies.</li>
+    <li>Run "<b>npm install</b>" to install all dependencies.</li>
     <li>Create a .env file with the necessary environment variables.</li>
-    <li>Run "npm start" to start the application.</li>
+    <li>Run "<b>npm start</b>" to start the application.</li>
 </ol>
     <h2>Roadmap:</h2>
 <p>The BookMyShow Fullstack Capstone Project is aimed at creating a web application that enables users to book movie tickets online. The project involves several components, including the frontend, backend, database, and APIs. Here is the roadmap for the project:</p>
