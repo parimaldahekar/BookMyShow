@@ -7,7 +7,7 @@ import SeatsInput from "./SeatsInput";
 const SelectSeats = () => {
   // State to keep track of selected seats
   const [seat, changeSeats] = useState([]);
-  
+
   // Accessing context
   const context = useContext(DatabaseContext);
   const { noOfSeat, changeNoOfSeats } = context;

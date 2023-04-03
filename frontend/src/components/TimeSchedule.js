@@ -6,17 +6,19 @@ import DatabaseContext from "../context/DatabaseContext";
 
 const TimeSchedule = () => {
   const context = useContext(DatabaseContext);
-
   const { time, changeTime } = context;
 
-  const handleChangeTime = useCallback((value) => {
-    // The useCallback hook is used to memoize this function so that it is only created once and not recreated on every re-render of the component.
-    // This function is used to handle the change of selected time slot
-    changeTime(value);
+  const handleChangeTime = useCallback(
+    (value) => {
+      // The useCallback hook is used to memoize this function so that it is only created once and not recreated on every re-render of the component.
+      // This function is used to handle the change of selected time slot
+      changeTime(value);
 
-    // Store the selected time slot in local storage
-    window.localStorage.setItem("slot", value);
-  }, [changeTime]);
+      // Store the selected time slot in local storage
+      window.localStorage.setItem("slot", value);
+    },
+    [changeTime]
+  );
 
   return (
     <>

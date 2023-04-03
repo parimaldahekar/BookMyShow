@@ -7,7 +7,7 @@ function App() {
     // Wrap the Home component with the DatabaseState context provider
     <>
       <DatabaseState>
-        <Home/>
+        <Home />
       </DatabaseState>
     </>
   );

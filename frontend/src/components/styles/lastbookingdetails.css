@@ -1,11 +1,10 @@
 .last_booking_details_container {
   width: 23%;
-  border: 5px ;
+  border: 5px;
   border-radius: 10px;
   box-shadow: 0 0 1px 1px;
   padding: 10px 10px 10px 20px;
   margin: 20px 0px 20px 20px;
-  
 }
 
 .last_booking_details_container_main {
@@ -38,8 +37,8 @@
   width: auto;
   padding: 5px;
   border-radius: 5px;
- justify-content: space-evenly;
-margin: 1px;
+  justify-content: space-evenly;
+  margin: 1px;
 }
 
 .seats_container .seats {
@@ -48,7 +47,6 @@ margin: 1px;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-
 
 .slot span,
 .movie span {

@@ -9,6 +9,7 @@
     <p>Backend: <a href="https://bookmyshow-4i5c.onrender.com/api/booking" target="_blank">https://bookmyshow-4i5c.onrender.com/api/booking</a></p>
     <p>The BookMyShow Capstone Project is a web application that allows users to book movie tickets online. The project is built using several components, including the frontend, backend, database, and APIs. The application provides a userfriendly platform that enables users to book movie tickets from the comfort of their homes.</p>
     <h2>Installation</h2>
+    <hr>
 <p>To install the BookMyShow Capstone Project, follow these steps:</p>
 <ol>
     <li>Clone the repository to your local machine.</li>
@@ -18,6 +19,7 @@
     <li>Run "<b>npm start</b>" to start the application.</li>
 </ol>
     <h2>Roadmap:</h2>
+    <hr>
 <p>The BookMyShow Fullstack Capstone Project is aimed at creating a web application that enables users to book movie tickets online. The project involves several components, including the frontend, backend, database, and APIs. Here is the roadmap for the project:</p>
 <ol>
 <li><b>Develop the frontend:</b> After designing the wireframe and prototype, the next step is to develop the frontend using HTML, CSS, and JavaScript. React can be used to create a responsive and interactive user interface.</li>

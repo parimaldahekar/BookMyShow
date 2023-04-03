@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./styles/lastbookingdetails.css";
-import { useContext } from "react";
 import DatabaseContext from "../context/DatabaseContext";
 import { seats } from "../data/Data";
 
 const LastBookingDetails = () => {
-  const { handleGetLastBooking, lastBookingDetails } = useContext(DatabaseContext);
+  const { handleGetLastBooking, lastBookingDetails } =
+    useContext(DatabaseContext);
 
   useEffect(() => {
     // Fetch the details of the last booking when the component mounts
@@ -21,14 +21,15 @@ const LastBookingDetails = () => {
           <div className="seats-container">
             <p className="seats-header">Seats:</p>
             <ul className="seats-list">
-              {seats.map((seat) => (
-                // Only show the seat if its quantity is greater than 1
-                lastBookingDetails.seats[seat] >= 1 && (
-                  <div className="" key={seat}>           
+              {seats.map(
+                (seat) =>
+                  // Only show the seat if its quantity is greater than 1
+                  lastBookingDetails.seats[seat] >= 1 && (
+                    <div key={seat}>
                       {seat}: {lastBookingDetails.seats[seat]}
-                  </div>
-                )
-              ))}
+                    </div>
+                  )
+              )}
             </ul>
           </div>
           <p className="slot">

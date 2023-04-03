@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import DatabaseContext from "../context/DatabaseContext";
 import "./styles/Modal.css";
 
-
-
 function Modal() {
   const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } =
     useContext(DatabaseContext);
@@ -35,4 +33,3 @@ function Modal() {
 }
 
 export default Modal;
-

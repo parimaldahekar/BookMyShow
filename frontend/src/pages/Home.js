@@ -5,7 +5,7 @@ import TimeSchedule from "../components/TimeSchedule";
 import Modal from "../components/Modal";
 import "./Home.css";
 import DatabaseContext from "../context/DatabaseContext";
-import { useContext, useMemo } from "react";
+import { useContext, useMemo,useState } from "react";
 
 const Home = () => {
   // Get context from the DatabaseContext provider
@@ -20,6 +20,9 @@ const Home = () => {
     setErrorMessage,
     changeNoOfSeats,
   } = context;
+
+  const [loading, setLoading] = useState(false);
+
 
   // Memoize a function to check if there are negative seats
   const checkNegSeats = useMemo(() => {
@@ -70,7 +73,11 @@ const Home = () => {
     }
   };
 
-  const handleDeleteBooking = async () => {
+// Handle delete booking when the "Delete Booking" button is clicked
+const handleDeleteBooking = async () => {
+  setLoading(true);
+
+  try {
     // Sending API request to backend to delete most recent booking
     const response = await fetch(
       `https://bookmyshow-4i5c.onrender.com/api/booking`,
@@ -89,7 +96,13 @@ const Home = () => {
     if (response.status === 200) {
       LastBookingDetails(null);
     }
-  };
+  } catch (error) {
+    console.error(error);
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   // Render the Home component
   return (
@@ -106,13 +119,13 @@ const Home = () => {
                 {/* Render the LastBookingDetails component*/}
                 <LastBookingDetails />
                 <button
-                  onClick={() => {
-                    handleDeleteBooking();
-                  }}
-                  className="Delete-btn"
-                >
-                  Delete Booking
-                </button>
+                onClick={() => {
+                  handleDeleteBooking();
+                }}
+                className="Delete-btn"
+              >
+                {loading ? "Deleting...⌛" : "Delete Booking"}
+              </button>
               </div>
             </div>
           </div>

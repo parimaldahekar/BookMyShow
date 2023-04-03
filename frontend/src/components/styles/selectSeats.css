@@ -7,7 +7,6 @@
   margin: 15px 10px 20px 5px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
   background-color: white;
-
 }
 
 .SS_heading {
@@ -40,7 +39,6 @@
     border: 5px ;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
-    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

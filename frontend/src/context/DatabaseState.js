@@ -20,13 +20,16 @@ const DatabaseState = (props) => {
   // Function for making a POST request to the server with the booking details
   const handlePostBooking = async () => {
     // Sending API request to backend with user selected movie, slot and seats to book movie
-    const response = await fetch(`https://bookmyshow-4i5c.onrender.com/api/booking`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ movie: movie, slot: time, seats: noOfSeat }),
-    });
+    const response = await fetch(
+      `https://bookmyshow-4i5c.onrender.com/api/booking`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ movie: movie, slot: time, seats: noOfSeat }),
+      }
+    );
 
     const data = await response.json();
 
@@ -54,9 +57,12 @@ const DatabaseState = (props) => {
 
   // Function for making a GET request to the server to get the last booking details
   const handleGetLastBooking = async () => {
-    const response = await fetch(`https://bookmyshow-4i5c.onrender.com/api/booking`, {
-      method: "GET",
-    });
+    const response = await fetch(
+      `https://bookmyshow-4i5c.onrender.com/api/booking`,
+      {
+        method: "GET",
+      }
+    );
 
     const data = await response.json();
     // Setting last booking details received from the backend
