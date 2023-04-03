@@ -8,7 +8,7 @@
       <p>Frontend: <a href="https://bookmyshow-pd.netlify.app/" target="_blank">https://bookmyshow-pd.netlify.app/</a></p>
     <p>Backend: <a href="https://bookmyshow-4i5c.onrender.com/api/booking" target="_blank">https://bookmyshow-4i5c.onrender.com/api/booking</a></p>
     <p>The BookMyShow Capstone Project is a web application that allows users to book movie tickets online. The project is built using several components, including the frontend, backend, database, and APIs. The application provides a userfriendly platform that enables users to book movie tickets from the comfort of their homes.</p>
-    <h2>Installation</h2>
+    <h3>Installation</h3>
     <hr>
 <p>To install the BookMyShow Capstone Project, follow these steps:</p>
 <ol>
@@ -18,7 +18,7 @@
     <li>Create a .env file with the necessary environment variables.</li>
     <li>Run "<b>npm start</b>" to start the application.</li>
 </ol>
-    <h2>Roadmap:</h2>
+    <h3>Roadmap:</h3>
     <hr>
 <p>The BookMyShow Fullstack Capstone Project is aimed at creating a web application that enables users to book movie tickets online. The project involves several components, including the frontend, backend, database, and APIs. Here is the roadmap for the project:</p>
 <ol>
