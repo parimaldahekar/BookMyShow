@@ -1,10 +1,13 @@
 .SS_wrapper{
-  width: 64vw;
+  width: 63vw;
   border: 5px ;
   border-radius: 10px;
   box-shadow: 0 0 1px 1px;
   padding: 10px;
-  margin: 10px 10px 20px 5px;
+  margin: 15px 10px 20px 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
+  background-color: white;
+
 }
 
 .SS_heading {
@@ -19,6 +22,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   text-align: center;
+  background-color: white;
   margin-bottom: 10px;
 }
 
@@ -35,12 +39,12 @@
     width: 90%;
     border: 5px ;
     border-radius: 10px;
-    box-shadow: 0 0 1px 1px;
-    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px 5px;
+    margin: 10px 18px;
 
   }
 

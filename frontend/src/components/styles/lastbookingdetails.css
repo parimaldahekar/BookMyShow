@@ -5,6 +5,7 @@
   box-shadow: 0 0 1px 1px;
   padding: 10px 10px 10px 20px;
   margin: 20px 0px 20px 20px;
+  
 }
 
 .last_booking_details_container_main {
@@ -48,14 +49,6 @@ margin: 1px;
   justify-content: flex-start;
 }
 
-
-
-/* .slot,
-.movie {
-  margin-bottom: 2px;
-  font-size: 15px;
-  font-weight: 500;
-} */
 
 .slot span,
 .movie span {

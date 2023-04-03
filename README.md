@@ -33,7 +33,6 @@
 <ul>
   <li><b>React.js:</b> A widely-used JavaScript library for building user interfaces.</li>
   <li><b>CSS:</b> An essential language for designing and styling web pages.</li>
-  <li><b>Bootstrap:</b> A popular front-end framework that offers a set of tools and pre-designed elements to create responsive and mobile-first websites and web applications. It simplifies web development by providing a robust grid system, CSS components, and JavaScript plugins.</li>
 </ul>
 <h4>Backend (Server) :</h4>
 <ul>

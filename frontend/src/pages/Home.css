@@ -1,130 +1,172 @@
-.container {
-  width: 90%;
-  margin:  50px auto;
-  padding: 20px 20px 0px 20px;
-  background-color: #eae7e7;
-  border-radius: 10px;
-  border: 2px solid rgb(0, 0, 0);
-  color: #111111;
-  box-shadow: 15px 15px 15px rgba(120, 120, 122, 0.699);
+* {
+  box-sizing: border-box;
 }
 
-.container .selection_container {
-  width: 100%;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #eee5e5e3;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .select_movie_component {
-  flex-grow: 1;
   display: flex;
-  
+  justify-content: space-evenly;
+  margin: 20px 10px 10px 10px;
 }
 
+.seat_slot_container{
+  margin: 10px 10px 10px 10px;
+}
 
+.time_slot_container{
+  margin-bottom: 20px;
+  margin: 10px 10px 10px 10px;
 
-.BN-btn {
-  padding: 10px;
-  border: none;
-  margin: 10px 10px 20px 10px;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 25px;
-  color: rgb(0, 0, 0);
+}
+
+.select_movie_component label {
+  font-size: 2rem;
   font-weight: bold;
-  background-image: linear-gradient(rgb(0, 34, 255), rgb(0, 255, 106));
-  border-image: linear-gradient(rgb(0, 34, 255), rgb(0, 255, 106));
-  padding-bottom: 10px;
+  color: #333;
 }
 
-.BN-btn:hover {
-  background-image: linear-gradient(rgb(0, 255, 132), rgb(0, 64, 255));
-  color: #f7f1f1;
+.select_movie_component select {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
+  color: #666;
+  background-color: #f5f5f5;
 }
 
-.wrapper {
-  display: flex;
-  flex-grow: 0;
-  overflow: visible;
+.book-now-btn {
+  background-color: #007aff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 1.2rem 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin: 2rem 0 2rem;
 }
-.time_slot_container {
-  position: relative;
-  overflow: auto;
-  top: -10px;
-}
-.SS_wrapper {
-  margin-top: 10px;
+
+.book-now-btn:hover {
+  background-color: #ff3b3b;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
+.Delete-btn {
+  padding: 0.8rem;
+  border: none;
+  margin: 0.2rem ;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: bold;
+  background-color: #ff3b3b;
+  background-image: linear-gradient(to bottom, #ff3b3b, #ff4f4f);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.Delete-btn:hover {
+  background-image: linear-gradient(to bottom, #ff4f4f, #ff3b3b);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.last_booking_details_container {
+  width: 27%;
+  margin: 1px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
+  padding: 5px 5px 10px 5px;
+  background-color: #fff;
+  text-align: center;
+  height: fit-content;
+}
+
+.last_booking_details_container h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2;
+}
+
+.last_booking_details_container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.last_booking_details_container label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.last_booking_details_container span {
+  font-size: 16px;
+  color: #666;
+  margin-left: 5px;
+}
 
 
-@media screen and (max-width: 1300px) {
-
+@media only screen and (max-width: 700px) {
   .container {
-    width: 85%;
-    padding: 15px;
-  }
-
-  .wrapper {
-    flex-direction: column-reverse;
-  }
-
-  .select_movie_component {
-    flex-grow: 1;
     width: 100%;
-    margin-bottom: 10px;
-    display: flex;
+    margin: 20px auto;
+    padding: 10px;
   }
 
-  .time_slot_container {
-    top: 0px;
-    width: auto;
-    margin-bottom: 20px;
-  }
-  
-  .last_booking_details_container {
-    width: 33%;
-  border: 5px ;
-  border-radius: 10px;
-  box-shadow: 0 0 1px 1px;
-  padding: 10px 10px 30px 20px;
-  margin: 20px 0px 20px 20px;
-
-  }
-  
-
-  .BN-btn{
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .container {
-    width: 85%;
-    padding: 15px;
+  .select_movie_component select {
+    font-size: 14px;
   }
 
   .select_movie_component {
-    display: flex;
     flex-direction: column-reverse;
-    width: auto;
-  border: 5px ;
-  border-radius: 10px;
-  margin: 10px 0px 10px 0px;
+  }
 
+  .book-now-btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+
+  .Delete-btn {
+    padding: 8px;
+    font-size: 13px;
   }
 
   .last_booking_details_container {
-    width: 90%;
-  border: 5px ;
-  border-radius: 10px;
-  box-shadow: 0 0 1px 1px;
-  padding: 10px 10px 10px 15px;
-  margin: 20px 0px 10px 0px;
-
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
   }
 
-  .BN-btn{
-    font-size: 20px;
+  .last_booking_details_container h3 {
+    font-size: 18px;
   }
 
-  
+  .last_booking_details_container p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .last_booking_details_container label {
+    font-size: 16px;
+  }
+
+  .last_booking_details_container span {
+    font-size: 14px;
+  }
 }

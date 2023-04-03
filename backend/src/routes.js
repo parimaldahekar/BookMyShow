@@ -51,7 +51,7 @@ router.delete("/booking", async (req, res) => {
     const myData = await Schema.findOneAndDelete().sort({ _id: -1 }); // Finding and deleting the most recent booking data from the database
     if (myData) {
       // Sending a success response with the deleted booking data
-      res.status(200).json({ data: myData, message: "Booking Deleted!" });
+      res.status(200).json({ data: myData, message: "Booking Deleted" });
     } else {
       // Sending a response with a null data and a message if no booking data is found
       res.status(200).json({ data: null, message: "No previous booking found!" });

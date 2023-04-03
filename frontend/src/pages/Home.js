@@ -7,8 +7,7 @@ import "./Home.css";
 import DatabaseContext from "../context/DatabaseContext";
 import { useContext, useMemo } from "react";
 
-
-const Home = (props) => {
+const Home = () => {
   // Get context from the DatabaseContext provider
   const context = useContext(DatabaseContext);
   // Destructure values from context
@@ -60,8 +59,7 @@ const Home = (props) => {
         setErrorMessage("Please select a time slot!");
         break;
       // Display an error popup if there are negative or zero seats
-      case checkNegSeats(noOfSeat) ||
-        checkZeroSeats(noOfSeat):
+      case checkNegSeats(noOfSeat) || checkZeroSeats(noOfSeat):
         setErrorPopup(true);
         setErrorMessage("Please select a seats!");
         break;
@@ -74,73 +72,73 @@ const Home = (props) => {
 
   const handleDeleteBooking = async () => {
     // Sending API request to backend to delete most recent booking
-    const response = await fetch(`https://bookmyshow-4i5c.onrender.com/api/booking`, {
-      method: "DELETE",
-    });
-  
+    const response = await fetch(
+      `https://bookmyshow-4i5c.onrender.com/api/booking`,
+      {
+        method: "DELETE",
+      }
+    );
+
     const data = await response.json();
-  
+
     // Showing error popup if the response status is other than 200
     setErrorPopup(true);
     setErrorMessage(data.message);
-  
+
     // Clearing the last booking details if the response status is 200
     if (response.status === 200) {
       LastBookingDetails(null);
     }
   };
-  
-  
 
   // Render the Home component
   return (
     <>
-    {/*Render the Modal component */}
-    <Modal />
-    <div className="container">
-      <div className="selection_container">
-        <div className="wrapper">
-          <div className="select_movie_component">
-            {/* Render the SelectMovie component */}
-            <SelectMovie />
-            <div className="last_booking_details_container">
-            {/* Render the LastBookingDetails component*/}
-            <LastBookingDetails /> 
+      {/*Render the Modal component */}
+      <Modal />
+      <div className="container">
+        <div className="selection_container">
+          <div className="wrapper">
+            <div className="select_movie_component">
+              {/* Render the SelectMovie component */}
+              <SelectMovie />
+              <div className="last_booking_details_container">
+                {/* Render the LastBookingDetails component*/}
+                <LastBookingDetails />
+                <button
+                  onClick={() => {
+                    handleDeleteBooking();
+                  }}
+                  className="Delete-btn"
+                >
+                  Delete Booking
+                </button>
+              </div>
+            </div>
           </div>
+          <div className="time_slot_container">
+            {/* Render the TimeSchedule component */}
+            <TimeSchedule />
           </div>
-       
-        </div>
-        <div className="time_slot_container">
-          {/* Render the TimeSchedule component */}
-          <TimeSchedule />
-        </div>
-        <div>
-        <SelectSeats />
-
-        </div>
-        <div className="seat_slot_container" style={{ textAlign: "center" }}>
-          {/*Render the SelectSeats component */}
-          <button
-            onClick={() => {
-              handleBookNow();
-            }}
-            className="BN-btn"
-          >
-            Book Now
-          </button>
-          <button
-          onClick={() => {
-            handleDeleteBooking();
-          }}
-          className="BN-btn"
-        >
-          Del
-        </button>
+          <div>
+            <div className="seat_slot_container">
+              <SelectSeats />
+            </div>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            {/*Render the SelectSeats component */}
+            <button
+              onClick={() => {
+                handleBookNow();
+              }}
+              className="book-now-btn"
+            >
+              Book Now
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </>
-  
+    </>
   );
 };
 

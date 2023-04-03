@@ -1,60 +1,63 @@
+/* CSS for Movie Booking Website */
+
+/* Active label */
 .form-check-label.active {
   background-color: rgba(77, 184, 246, 0.843);
   color: white;
   font-weight: 500;
-  user-select: none;
   letter-spacing: 0.5px;
   border-radius: 5px;
   cursor: pointer;
-  height: 2.5vh;
-  text-align: center;
-
+  height: 5.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Inactive label */
 .form-check-label.inactive {
   user-select: none;
   cursor: pointer;
   letter-spacing: 0.5px;
-  text-align: center;
   border-radius: 5px;
-  height: 2.5vh;
-  text-align: center;
-
+  height: 5.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.inactive:hover {
+/* Hover effect for inactive label */
+.form-check-label.inactive:hover {
   background-color: rgba(23, 221, 92, 0.558);
   opacity: 0.95;
 }
 
+/* Common label styles */
 .form-check-label {
   padding: 10px 15px;
   font-size: 18px;
   border: 2px solid rgb(0, 0, 0);
   margin: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Text styles */
 .text {
-  font-size: 15px;
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
+/* Responsive design */
 @media screen and (max-width: 1300px) {
+  /* Reduce margin for all labels */
   .form-check-label {
     margin: 5px;
   }
 
-  .form-check-label.active {
-    
-    height: auto;
-  }
-
+  /* Increase height of active and inactive labels */
+  .form-check-label.active,
   .form-check-label.inactive {
-  
     height: auto;
-  
   }
-  
-
 }

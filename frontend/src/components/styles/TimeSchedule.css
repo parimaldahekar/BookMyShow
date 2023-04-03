@@ -4,13 +4,15 @@
 }
 
 .Slot_container{
-  width: 64vw;
+  width: 63vw;
   border: 5px ;
   border-radius: 10px;
   box-shadow: 0 0 1px 1px;
   padding: 20px 10px;
   margin: 15px 0px 10px 5px;
-  
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
+
 }
 
 .TS_main_container {
@@ -31,13 +33,12 @@
     width: 90%;
     border: 5px ;
     border-radius: 10px;
-    box-shadow: 0 0 1px 1px;
-    padding: 10px;
-    margin: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
+    padding: 15px;
+    margin: 18px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px 10px 20px 10px;
 
   }
 

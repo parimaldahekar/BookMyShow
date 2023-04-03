@@ -2,29 +2,27 @@ import React, { useContext } from "react";
 import DatabaseContext from "../context/DatabaseContext";
 import "./styles/Modal.css";
 
+
+
 function Modal() {
-  // Destructure the context object directly for better readability
   const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } =
     useContext(DatabaseContext);
 
-  // Function for closing the error modal
   const handleClosePopup = () => {
     setErrorMessage("");
     setErrorPopup(false);
   };
 
-  // Render the error modal if `errorPopup` is true
   return (
     <>
       {errorPopup && (
-        <div className={`modal-container ${errorPopup ? "active" : "inactive"}`}>
+        <div className="modal-overlay">
           <div className="modal">
             <div className="modal-header">
-              <strong>Message</strong>
+              <h2>Message</h2>
             </div>
             <div className="modal-body">
-              {/* Display the error message */}
-              <span>{errorMessage}</span>
+              <p>{errorMessage}</p>
             </div>
             <div className="modal-footer">
               <button onClick={handleClosePopup}>Close</button>
@@ -37,3 +35,4 @@ function Modal() {
 }
 
 export default Modal;
+

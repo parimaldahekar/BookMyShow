@@ -6,8 +6,7 @@
 .SM_main_container {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap;  
 }
 
 .SM_main_container{
@@ -16,7 +15,9 @@
   border-radius: 10px;
   box-shadow: 0 0 1px 1px;
   padding: 10px 10px 30px 10px;
-  margin: 20px 10px 20px 5px;
+  margin:5px 10px 0px 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
+background-color: white;
 }
 
 @media screen and (max-width: 700px) {
@@ -26,7 +27,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
+  margin: 10px auto;
+}
+.SM_heading {
+  width: 100%;
+  font-size: 18px;
 }
 }
 
@@ -34,15 +40,10 @@
  
   .SM_main_container {
     width: 64vw;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.726);
 
   }
   }
 
 
-  @media screen and (max-width: 700px) {
  
-    .SM_heading {
-      width: 100%;
-      font-size: 18px;
-    }
-    }

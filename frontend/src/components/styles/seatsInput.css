@@ -1,17 +1,43 @@
+/* CSS for Movie Booking Website */
+
+/* Container for seats and input */
 .seats {
   display: flex;
-  text-align: center;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   max-width: fit-content;
 }
 
+/* Input for seat selection */
 .seats-input {
   width: 50px;
-  border-radius: 20px;
+  height: 30px;
+  border-radius: 25px;
   margin-left: 10px;
   text-align: center;
   font-size: 20px;
-  border: none !important;
-  padding: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+/* Focus state for input */
+.seats-input:focus {
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  /* Increase size of input for smaller screens */
+  .seats-input {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 8px;
+  }
 }

@@ -24,10 +24,8 @@ const LastBookingDetails = () => {
               {seats.map((seat) => (
                 // Only show the seat if its quantity is greater than 1
                 lastBookingDetails.seats[seat] >= 1 && (
-                  <div className="" key={seat}>
-                   
+                  <div className="" key={seat}>           
                       {seat}: {lastBookingDetails.seats[seat]}
-                    
                   </div>
                 )
               ))}
