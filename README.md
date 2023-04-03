@@ -7,10 +7,10 @@
     <h1>BookMyShow </h1>
       <p>Frontend: <a href="https://bookmyshow-pd.netlify.app/" target="_blank">https://bookmyshow-pd.netlify.app/</a></p>
     <p>Backend: <a href="https://bookmyshow-4i5c.onrender.com/api/booking" target="_blank">https://bookmyshow-4i5c.onrender.com/api/booking</a></p>
-    <p>The BookMyShow Capstone Project is a web application that allows users to book movie tickets online. The project is built using several components, including the frontend, backend, database, and APIs. The application provides a userfriendly platform that enables users to book movie tickets from the comfort of their homes.</p>
+    <p>The BookMyShow is a web application that allows users to book movie tickets online. The project is built using several components, including the frontend, backend, database, and APIs. The application provides a userfriendly platform that enables users to book movie tickets from the comfort of their homes.</p>
     <h3>Installation</h3>
     <hr>
-<p>To install the BookMyShow Capstone Project, follow these steps:</p>
+<p>To run the BookMyShow web, follow these steps:</p>
 <ol>
     <li>Clone the repository to your local machine.</li>
     <li>Install Node.js and MongoDB if not already installed.</li>
@@ -20,7 +20,7 @@
 </ol>
     <h3>Roadmap:</h3>
     <hr>
-<p>The BookMyShow Fullstack Capstone Project is aimed at creating a web application that enables users to book movie tickets online. The project involves several components, including the frontend, backend, database, and APIs. Here is the roadmap for the project:</p>
+<p>The BookMyShow Fullstack Capstone Project is aimed for creating a web application that enables users to book movie tickets online. The project involves several components, including the frontend, backend, database, and APIs. Here is the roadmap for the project:</p>
 <ol>
 <li><b>Develop the frontend:</b> After designing the wireframe and prototype, the next step is to develop the frontend using HTML, CSS, and JavaScript. React can be used to create a responsive and interactive user interface.</li>
 <li><b>Develop the backend:</b> The backend can be developed using Node.js and Express. APIs can be created to enable users to perform functions like booking tickets.</li>
